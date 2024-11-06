@@ -35,5 +35,8 @@ jobs:
           exit-code: '1' 
           severity: 'CRITICAL' 
 
+      # ------------------------------------------------------------
+      # Logout of Docker Hub 
+      # ------------------------------------------------------------
       - name: Logout of Docker Hub
         uses: docker/logout-action@v2
