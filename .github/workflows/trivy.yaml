@@ -38,5 +38,12 @@ jobs:
       # ------------------------------------------------------------
       # Logout of Docker Hub 
       # ------------------------------------------------------------
+      - name: Echo before logout
+        run: echo "About to logout..."
+
       - name: Logout of Docker Hub
         uses: docker/logout-action@v2
+        continue-on-error: true # Continue even if logout fails
+
+      - name: Echo after logout
+        run: echo "Logout step completed (or skipped)."
