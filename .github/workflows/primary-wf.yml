@@ -7,7 +7,7 @@ on:
 
 jobs:
   scan:
-    uses: ./.github/workflows/trivy-scan.yml@main
+    uses: ./.github/workflows/trivy-scan.yml
     with:
       image-ref: 'tanveermeman/php:latest'
     secrets:
