@@ -29,5 +29,5 @@ jobs:
           format: 'table'
           severity: 'CRITICAL'
 
-      - name: Logout of Docker Hub
-        uses: docker/logout-action@v2
+      # - name: Logout of Docker Hub
+      #   uses: docker/logout-action@v2
